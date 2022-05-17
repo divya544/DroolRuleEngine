@@ -32,8 +32,10 @@ public class DroolsConfiguration {
     @RefreshScope
     public KieSession getKieSession() throws IOException {
 
-//        String rulesExcel = "C:\\Users\\Divya_Intern\\Desktop\\NewDrool\\drool\\src\\main\\resources\\rules.xls";
+//        String rulesExcel = "C:\\Users\\Divya_Intern\\Desktop\\NewDrool\\DroolRuleEngine\\drool\\src\\main\\resources\\rules.xls";
+
         String rulesExcel = getRule();
+
         InputStream is = null;
         try {
             is= new FileInputStream(rulesExcel);
